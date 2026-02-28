@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StackQuiz</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="game.css">
+
+  <script src="game.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+<body>
+  
+  <!-- Game Page: This is my header -->
+  <nav>
+    <ul>
+      <li class="title"><a href="index.html">StackQuiz</a></li>
+      <li class="score">Score: <span id="current-score">0</span></li>
+      <div class="lives">
+        <li class="life">🩷</li>
+        <li class="life">🩷</li>
+        <li class="life">🩷</li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- This is questions -->
+  
+  <div class="game-area">
+    <!-- Question -->
+    <div>
+      <h2>
+        Question <span id="question-counter">1</span> of 10
+      </h2>
+    </div>
+
+    <div class="question-wrapper">
+      <h2 class="question-text" id="question-text">
+        Loading question...
+      </h2>
+    </div>
+
+    <!-- Choices -->
+    <div class="choices-grid">
+      <button class="choice-btn" data-choice="0">Choice 1</button>
+      <button class="choice-btn" data-choice="1">Choice 2</button>
+      <button class="choice-btn" data-choice="2">Choice 3</button>
+      <button class="choice-btn" data-choice="3">Choice 4</button>
+    </div>
+  </div>
+
+</body>
+</html>

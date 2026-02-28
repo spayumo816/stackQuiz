@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background-color: #fff9e6;   
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #003366;   
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  flex-wrap: wrap;  
+}
+
+.title a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.score {
+  font-size: 22px;
+}
+
+.lives {
+  display: flex;
+}
+
+.life {
+  font-size: 40px;
+}
+
+.game-area {
+  padding-top: 120px;   
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.game-area > div:first-child h2 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.question-wrapper {
+  background-color: #003366;
+  color: white;
+  padding: 35px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 90%;
+  box-shadow: 5px 5px 15px gray;
+}
+
+.question-text {
+  font-size: 24px;
+}
+
+.choices-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.choice-btn{
+  background-color: white;
+  color: #003366;
+  font-size: 20px;
+  padding: 25px;
+  border: 3px solid #003366;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.choice-btn:hover {
+  background-color: #f0f8ff;
+}
+
+.choice-btn:disabled {
+  background-color: #ddd;
+  color: #666;
+}
+
+.choice-btn.correct {
+  background-color: green !important;
+  color: white;
+}
+
+.choice-btn.incorrect {
+  background-color: red !important;
+  color: white;
+}
+
+.play-again-btn, .go-home-btn{
+  background-color: white;
+  color: #003366;
+  font-size: 20px;
+  padding: 25px;
+  border: 3px solid #003366;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px gray;
+}
+
+@media (max-width: 600px) {
+  .choices-grid {
+    gap: 15px;  
+  }
+  
+  .choice-btn {
+    font-size: 17px;   
+    padding: 18px;    
+  }
+}
+
+@media (max-width: 400px) {
+  .choice-btn {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title a {
+    font-size: 26px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+
+  .lives {
+    margin-top: 8px;
+  }
+
+  .life {
+    font-size: 34px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title a {
+    font-size: 24px;
+  }
+
+  .life {
+    font-size: 30px;
+  }
+}
